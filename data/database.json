@@ -1,0 +1,316 @@
+{
+    "products": [
+        {
+            "product_name": "kit",
+            "price": "350",
+            "qnt": "4",
+            "img": "static/img/2_e822dae0-14df-4cb8-b145-ea4dc0966b34.webp"
+        },
+        {
+            "product_name": "kit",
+            "price": "200",
+            "qnt": "4",
+            "img": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fbeauty-product&psig=AOvVaw08SoOUBT4Mi3fUyq9by_2m&ust=1698273636744000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCJCC77ngj4IDFQAAAAAdAAAAABAS"
+        },
+        {
+            "product_name": "kit",
+            "price": "200",
+            "qnt": "4",
+            "img": "static/img/1.png"
+        },
+        {
+            "product_name": "kit",
+            "price": "200",
+            "qnt": "4",
+            "img": "static/img/1.png"
+        },
+        {
+            "product_name": "kit",
+            "price": "200",
+            "qnt": "4",
+            "img": "static/img/1.png"
+        },
+        {
+            "product_name": "kit",
+            "price": "200",
+            "qnt": "4",
+            "img": "static/img/1.png"
+        },
+        {
+            "product_name": "kit",
+            "price": "200",
+            "qnt": "4",
+            "img": "static/img/1.png"
+        },
+        {
+            "product_name": "kit",
+            "price": "200",
+            "qnt": "4",
+            "img": "static/img/1.png"
+        },
+        {
+            "product_name": "kit",
+            "price": "200",
+            "qnt": "4",
+            "img": "static/img/1.png"
+        },
+        {
+            "product_name": "kit",
+            "price": "200",
+            "qnt": "4",
+            "img": "static/img/1.png"
+        },
+        {
+            "product_name": "kit",
+            "price": "200",
+            "qnt": "4",
+            "img": "static/img/1.png"
+        },
+        {
+            "product_name": "kit",
+            "price": "200",
+            "qnt": "4",
+            "img": "static/img/1.png"
+        },
+        {
+            "product_name": "kit",
+            "price": "200",
+            "qnt": "4",
+            "img": "static/img/1.png"
+        },
+        {
+            "product_name": "kit",
+            "price": "200",
+            "qnt": "4",
+            "img": "static/img/1.png"
+        },
+        {
+            "product_name": "kit",
+            "price": "200",
+            "qnt": "4",
+            "img": "static/img/1.png"
+        },
+        {
+            "product_name": "kit",
+            "price": "200",
+            "qnt": "4",
+            "img": "static/img/1.png"
+        },
+        {
+            "product_name": "kit",
+            "price": "200",
+            "qnt": "4",
+            "img": "static/img/1.png"
+        },
+        {
+            "product_name": "kit",
+            "price": "200",
+            "qnt": "4",
+            "img": "static/img/1.png"
+        },
+        {
+            "product_name": "kit",
+            "price": "200",
+            "qnt": "4",
+            "img": "static/img/1.png"
+        },
+        {
+            "product_name": "kit",
+            "price": "200",
+            "qnt": "4",
+            "img": "static/img/1.png"
+        },
+        {
+            "product_name": "kit",
+            "price": "200",
+            "qnt": "4",
+            "img": "static/img/1.png"
+        },
+        {
+            "product_name": "\u0647\u0627\u062a\u0641",
+            "price": "3000",
+            "qnt": "2"
+        },
+        {
+            "product_name": "\u0642\u0637\u0639 \u063a\u064a\u0627\u0631",
+            "price": "350",
+            "qnt": "1",
+            "info": "\u0645\u0648\u0627\u0635\u0641\u0627\u062a \u0627\u0644\u0645\u0646\u062a\u062c \u0645\u0632\u0627\u064a\u0627 \u0648 \u0645\u062d\u0627\u0633\u0646 \u0627\u0644\u0645\u0646\u062a\u062c \u0645\u064a\u0632\u0627\u062a \u0648 \u0627\u0644\u062e\u0648\u0627\u0635 \u0643\u0644 \u0634\u064a \u0639\u0646 \u0627\u0644\u0645\u0646\u062a\u062c \u0637\u0631\u064a\u0642\u0629 \u0627\u0644\u0627\u0633\u062a\u062e\u062f\u0627\u0645 \u0627\u0644\u0649 \u0627\u0644\u062a\u0648\u0635\u064a"
+        },
+        {
+            "product_name": "kit",
+            "price": "100",
+            "qnt": "kit",
+            "info": "kit",
+            "img": "/home/kali/Desktop/python/python/static/img/1.png"
+        },
+        {
+            "product_name": "kit",
+            "price": "100",
+            "qnt": "2",
+            "info": "kit kit kit ",
+            "img": "1.png"
+        },
+        {
+            "product_name": "kit",
+            "price": "100",
+            "qnt": "5",
+            "info": "kit kit kit",
+            "img": "receiver.py"
+        },
+        {
+            "product_name": "new product",
+            "price": "500",
+            "qnt": "10",
+            "info": "new product to see  how you are so clever boy",
+            "img": "images.jpeg"
+        },
+        {
+            "product_name": "new product",
+            "price": "500",
+            "qnt": "6",
+            "info": "new product to see  how you are so clever boy",
+            "img": "static/imgimages.jpeg"
+        },
+        {
+            "product_name": "kit ",
+            "price": "100",
+            "qnt": "50",
+            "info": "kit",
+            "img": "static/img/images.jpeg"
+        },
+        {
+            "product_name": "gormat",
+            "price": "5000",
+            "qnt": "4",
+            "info": "for zomen",
+            "img": "static/img/images.jpeg"
+        },
+        {
+            "product_name": "gormat",
+            "price": "500",
+            "qnt": "20",
+            "info": "for women",
+            "img": "static/img/images.jpeg"
+        },
+        {
+            "product_name": "gormat",
+            "price": "1000",
+            "qnt": "15",
+            "info": "gormat2",
+            "img": "static/img/images.jpeg"
+        },
+        {
+            "product_name": "tondouze",
+            "price": "600",
+            "qnt": "1",
+            "info": "cut hear for mean",
+            "img": "https://firebasestorage.googleapis.com/v0/b/website-87954.appspot.com/o/images%2Fimages.jpeg.png?alt=media&token=dcd1376c-7948-4313-9c01-97a54debd12f"
+        },
+        {
+            "product_name": "game",
+            "price": "6000",
+            "qnt": "1",
+            "info": "game for child",
+            "img": "https://firebasestorage.googleapis.com/v0/b/website-87954.appspot.com/o/images%2Fimages.jpeg.png?alt=media&token=dcd1376c-7948-4313-9c01-97a54debd12f"
+        },
+        {
+            "product_name": "poco",
+            "price": "2000",
+            "qnt": "1",
+            "info": "phone mobile",
+            "img": null
+        },
+        {
+            "product_name": "poco",
+            "price": "5000",
+            "qnt": "1",
+            "info": "phone mobile",
+            "img": null
+        },
+        {
+            "product_name": "poco",
+            "price": "50000",
+            "qnt": "1",
+            "info": "phone mobile",
+            "img": null
+        },
+        {
+            "product_name": "poco",
+            "price": "5000",
+            "qnt": "2",
+            "info": "mobile phone",
+            "img": null
+        },
+        {
+            "product_name": "poco",
+            "price": "400",
+            "qnt": "5",
+            "info": "mobile phone",
+            "img": null
+        },
+        {
+            "product_name": "poco",
+            "price": "6000",
+            "qnt": "2",
+            "info": "mobilephone",
+            "img": null
+        },
+        {
+            "product_name": "poco x3",
+            "price": "120",
+            "qnt": "1",
+            "info": "phone mobile",
+            "img": null
+        },
+        {
+            "product_name": "poco x4",
+            "price": "150",
+            "qnt": "1",
+            "info": "phonemobile",
+            "img": null
+        },
+        {
+            "product_name": "sumsung s21",
+            "price": "230000",
+            "qnt": "5",
+            "info": "galaxy",
+            "img": null
+        },
+        {
+            "product_name": "kitmen",
+            "price": "60000",
+            "qnt": "10",
+            "info": "kit kit kit",
+            "img": null
+        },
+        {
+            "product_name": "poco",
+            "price": "5000",
+            "qnt": "20",
+            "info": "phone mobile",
+            "img": null
+        },
+        {
+            "product_name": "sumsung",
+            "price": "5000",
+            "qnt": "20",
+            "info": "mobile",
+            "img": null
+        },
+        {
+            "product_name": "kitmen",
+            "price": "6000",
+            "qnt": "10",
+            "info": "kit kit kit ",
+            "img": null
+        },
+        {
+            "product_name": "mobile 2023",
+            "price": "2300",
+            "qnt": "5",
+            "info": "mobile poco extra ordinairy ",
+            "img": null
+        }
+    ]
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+</html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Online Store</title>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+</head>
+<header>
+
+    <div class="nvbar">
+        <a href="/">المنتجات</a>
+        <a href="/pross_data">المعلومات</a>
+    </div>
+    <div class="nav-icon" id="search" onclick="">
+            <i class='bx bx-search-alt-2'></i>
+            <input type="text" id="search-input" placeholder="Enter your search">
+            
+    </div>
+</header>
+
+<body>
+    <div class="suggestions" id="suggestions"></div>
+    <div class="container">
+        <div class="title">
+            <h1>مرحبا بك في المتجر الالكتروني</h1>
+        </div>
+        <div id="progressBar">
+            <div id="filler"></div>
+        </div>
+        <div class="products" id="products">
+            {% for product in products %}
+            <div class="product"> 
+                <a >
+                    <h2><span>المنتج : <br></span>{{ product.product_name }}</h2>
+                    <div class="images">
+                        {% for image in product.img %}
+                                <img id="images" src='{{image}}' alt="you dont have image">
+                            {% endfor %}
+                        </div>
+                    <div class="product-info">
+                        <ul>
+                            <li> <p><span> موصفات المنتج: <br> </span> <p id="less{{loop.index}}"> <span id="dots{{loop.index}}" style="color: aliceblue;display: inline-block;overflow: hidden;height: 200px;">{{product.info}} ...</span><span id="more{{loop.index}}" style="display: none;"> {{product.info}} </span></p> <button onclick="readmore({{loop.index}})" id="myBtn{{loop.index}}">اقراء المزيد </button></li>
+                            <li><p><span>الكمية المتوفرة: <br> </span> {{ product.qnt }}</p></li>
+                            <li><p><span>السعر: <br> </span> {{ product.price }} DA </p></li>
+                        </ul>
+                    </div>
+                    <a href="{{ url_for('product', product_id=loop.index) }}">
+                        <button>عرض المنتج</button>
+                    </a>
+                </a>
+                
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+    <script src="static/js/search.js"></script>
+    <script>
+        function readmore(index) {
+          var index   
+          var dots = document.getElementById("dots"+index);
+          var moreText = document.getElementById("more"+index);
+          var btnText = document.getElementById("myBtn"+index);
+          var lessText = document.getElementById("less"+index);
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline-block";
+            dots.style.overflow ='hidden'
+            dots.style.maxHeight="200px"
+            btnText.innerHTML = "اقراء المزيد"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "اقراء اقل"; 
+            moreText.style.display = "inline-block";
+            moreText.style.color= "aliceblue"
+            lessText.style.height = "container"
+          }
+        }
+        </script>
+</body>
+
+
+</html>
