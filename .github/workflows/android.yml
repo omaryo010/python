@@ -10,8 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
+    - uses: actions/checkout@v4
 
     - name: Set up Python
       uses: actions/setup-python@v5
@@ -23,7 +22,8 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y python3-pip openjdk-17-jdk unzip zip git wget
         python3 -m pip install --upgrade pip
-        python3 -m pip install buildozer cython
+        # ثبّت buildozer و p4a بإصدارات مستقرة
+        python3 -m pip install buildozer==1.5.0 "python-for-android==2024.4.2" cython
 
     - name: Install Android SDK & build-tools 33.0.0
       run: |
@@ -37,6 +37,10 @@ jobs:
         echo "export PATH=$HOME/android-sdk/build-tools/33.0.0:$PATH" >> $GITHUB_ENV
 
     - name: Build APK
+      env:
+        ANDROIDSDK: ${{ env.ANDROID_SDK_ROOT }}
+        ANDROID_SDK_ROOT: ${{ env.ANDROID_SDK_ROOT }}
+        PATH: ${{ env.PATH }}:$HOME/android-sdk/build-tools/33.0.0
       run: |
         export ANDROID_SDK_ROOT=$HOME/android-sdk
         export PATH=$HOME/android-sdk/build-tools/33.0.0:$PATH
