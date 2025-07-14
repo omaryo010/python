@@ -20,9 +20,10 @@ android.api = 30
 android.minapi = 21
 android.ndk = 25b
 android.arch = arm64-v8a
-android.build_tools_version = 30.0.0
+android.build_tools_version = 33.0.0
 android.allow_backup = 1
 android.logcat_filters = *:S python:D
 android.extra_args = --lang=ar
 android.entrypoint = org.kivy.android.PythonActivity
 android.include_exts = csv,json
+android.sdk_path = $HOME/android-sdk
