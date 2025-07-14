@@ -22,8 +22,8 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y python3-pip openjdk-17-jdk unzip zip git wget
         python3 -m pip install --upgrade pip
-        # ثبّت buildozer و p4a بإصدارات مستقرة
-        python3 -m pip install buildozer==1.5.0 "python-for-android==2024.4.2" cython
+        # استخدم أحدث إصدار متاح python-for-android
+        python3 -m pip install buildozer==1.5.0 "python-for-android==2024.1.21" cython
 
     - name: Install Android SDK & build-tools 33.0.0
       run: |
