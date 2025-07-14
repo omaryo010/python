@@ -40,10 +40,6 @@ jobs:
 
     - name: Build APK
       shell: bash
-      env:
-        ANDROIDSDK: ${{ env.ANDROID_SDK_ROOT }}
-        ANDROID_SDK_ROOT: ${{ env.ANDROID_SDK_ROOT }}
-        PATH: ${{ env.PATH }}:$HOME/android-sdk/build-tools/33.0.0
       run: |
         command -v git
         git --version
