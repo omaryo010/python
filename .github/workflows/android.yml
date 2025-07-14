@@ -12,6 +12,9 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
+    - name: Clean old buildozer
+      run: rm -rf .buildozer
+
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
@@ -23,9 +26,6 @@ jobs:
         sudo apt-get install -y python3-pip openjdk-17-jdk unzip zip wget git
         python3 -m pip install --upgrade pip
         python3 -m pip install buildozer==1.5.0 "python-for-android==2024.1.21" cython
-
-    - name: Check git version
-      run: git --version
 
     - name: Install Android SDK & build-tools 33.0.0
       run: |
@@ -41,8 +41,6 @@ jobs:
     - name: Build APK
       shell: bash
       run: |
-        command -v git
-        git --version
         export ANDROID_SDK_ROOT=$HOME/android-sdk
         export PATH=$HOME/android-sdk/build-tools/33.0.0:$PATH
         buildozer -v android debug
