@@ -13,7 +13,9 @@ jobs:
     - uses: actions/checkout@v4
 
     - name: Clean buildozer cache
-      run: rm -rf .buildozer
+      run: |
+        rm -rf ~/.buildozer
+        rm -rf .buildozer
 
     - name: Set up Python
       uses: actions/setup-python@v5
@@ -35,6 +37,10 @@ jobs:
         mv $HOME/cmdline-tools/cmdline-tools/* $HOME/android-sdk/cmdline-tools/latest/
         yes | $HOME/android-sdk/cmdline-tools/latest/bin/sdkmanager --sdk_root=$HOME/android-sdk "platform-tools" "platforms;android-33" "build-tools;33.0.0"
         yes | $HOME/android-sdk/cmdline-tools/latest/bin/sdkmanager --licenses --sdk_root=$HOME/android-sdk
+
+    - name: Check aidl existence
+      run: |
+        ls -l $HOME/android-sdk/build-tools/33.0.0/aidl || (echo "aidl not found!" && exit 1)
 
     - name: Build APK
       shell: bash
