@@ -15,6 +15,8 @@ android.permissions = INTERNET,FOREGROUND_SERVICE,WAKE_LOCK,RECEIVE_BOOT_COMPLET
 # إضافة ملف الخط العربي (تأكد من أن الملف موجود في مجلد المشروع)
 android.add_asset = AQEEQSANSPRO-Light.otf.ttf
 
+android.build_tools_version = 34.0.0
+
 [buildozer]
 log_level = 2
 warn_on_root = 1
