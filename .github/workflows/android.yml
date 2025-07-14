@@ -20,7 +20,7 @@ jobs:
     - name: Install dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install -y python3-pip openjdk-17-jdk unzip zip git wget
+        sudo apt-get install -y python3-pip openjdk-17-jdk unzip zip git wget git
         python3 -m pip install --upgrade pip
         # استخدم أحدث إصدار متاح python-for-android
         python3 -m pip install buildozer==1.5.0 "python-for-android==2024.1.21" cython
