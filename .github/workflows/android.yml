@@ -45,7 +45,7 @@ jobs:
         ANDROID_SDK_ROOT: ${{ env.ANDROID_SDK_ROOT }}
         PATH: ${{ env.PATH }}:$HOME/android-sdk/build-tools/33.0.0
       run: |
-        which git
+        command -v git
         git --version
         export ANDROID_SDK_ROOT=$HOME/android-sdk
         export PATH=$HOME/android-sdk/build-tools/33.0.0:$PATH
