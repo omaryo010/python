@@ -35,13 +35,13 @@ jobs:
         mv $HOME/cmdline-tools/cmdline-tools/* $HOME/android-sdk/cmdline-tools/latest/
         yes | $HOME/android-sdk/cmdline-tools/latest/bin/sdkmanager --sdk_root=$HOME/android-sdk "platform-tools" "platforms;android-33" "build-tools;33.0.0"
         yes | $HOME/android-sdk/cmdline-tools/latest/bin/sdkmanager --licenses --sdk_root=$HOME/android-sdk
-        echo "export ANDROID_SDK_ROOT=$HOME/android-sdk" >> $GITHUB_ENV
-        echo "export PATH=$HOME/android-sdk/build-tools/33.0.0:$PATH" >> $GITHUB_ENV
 
     - name: Build APK
       shell: bash
       run: |
         export ANDROID_SDK_ROOT=$HOME/android-sdk
+        export ANDROID_HOME=$HOME/android-sdk
+        export ANDROIDSDK=$HOME/android-sdk
         export PATH=$HOME/android-sdk/build-tools/33.0.0:$PATH
         buildozer -v android debug
 
